@@ -1,0 +1,141 @@
+ body {
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                background: linear-gradient(135deg, #00aaff 0%, #005377 100%); /* Degradado de tonos azules */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                color: white;
+            }
+
+            /* Contenedor del login */
+            .login-container {
+                background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+                padding: 40px 30px;
+                border-radius: 20px;
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+                max-width: 400px;
+                width: 100%;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+            }
+
+            /* Título del login */
+            h1 {
+                font-size: 2.8rem;
+                color: #007BFF; /* Azul primario */
+                margin-bottom: 1.5rem;
+                font-weight: bold;
+            }
+
+            /* Estilo de los inputs */
+            input, select {
+                border-radius: 30px;
+                padding: 10px 15px;
+                border: 1px solid #007BFF;
+                transition: all 0.3s ease;
+                font-size: 1rem;
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+            input:focus, select:focus {
+                border-color: #0056b3;
+                box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+                outline: none;
+            }
+
+            /* Estilo del botón */
+            .btn-primary {
+                background-color: #007BFF;
+                border-color: #007BFF;
+                border-radius: 30px;
+                padding: 12px;
+                font-size: 1.2rem;
+                width: 100%;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                margin-top: 20px;
+            }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                transform: scale(1.05);
+            }
+
+            /* Fondo decorativo */
+            .background-bubbles {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                z-index: 1;
+            }
+
+            .bubble {
+                position: absolute;
+                bottom: -100px;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 50%;
+                animation: bubble 25s infinite;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .bubble:nth-child(1) {
+                width: 80px;
+                height: 80px;
+                left: 10%;
+                animation-duration: 20s;
+                animation-delay: 2s;
+            }
+
+            .bubble:nth-child(2) {
+                width: 100px;
+                height: 100px;
+                left: 30%;
+                animation-duration: 25s;
+                animation-delay: 4s;
+            }
+
+            .bubble:nth-child(3) {
+                width: 60px;
+                height: 60px;
+                left: 50%;
+                animation-duration: 22s;
+                animation-delay: 6s;
+            }
+
+            .bubble:nth-child(4) {
+                width: 90px;
+                height: 90px;
+                left: 70%;
+                animation-duration: 26s;
+                animation-delay: 8s;
+            }
+
+            .bubble:nth-child(5) {
+                width: 120px;
+                height: 120px;
+                left: 90%;
+                animation-duration: 30s;
+                animation-delay: 10s;
+            }
+
+            @keyframes bubble {
+                0% {
+                    bottom: -100px;
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 0.8;
+                }
+                100% {
+                    bottom: 100vh;
+                    opacity: 0;
+                }
+            }

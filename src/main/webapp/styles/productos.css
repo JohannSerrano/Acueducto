@@ -1,0 +1,157 @@
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9f3fd; /* Fondo suave azul claro */
+}
+
+/* Contenedor de la factura */
+.factura {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.1); /* Sombra azul suave */
+    border: 3px solid #1e4f8e; /* Borde azul oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para el título */
+.titulo {
+    text-align: center;
+    color: #1e4f8e; /* Azul oscuro */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #1e4f8e; /* Borde azul oscuro alrededor de la tabla */
+    border-radius: 8px; /* Bordes redondeados de la tabla */
+    overflow: hidden; /* Para que los bordes redondeados funcionen */
+}
+
+/* Estilos para las celdas de la tabla */
+.tabla-productos th, .tabla-productos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Encabezado de la tabla */
+.tabla-productos th {
+    background-color: #007bff; /* Azul brillante para el encabezado */
+    color: white;
+    font-weight: bold;
+}
+
+/* Filas alternadas para mayor legibilidad */
+.tabla-productos tr:nth-child(even) {
+    background-color: #e3f2fd; /* Azul claro para filas alternadas */
+}
+
+.tabla-productos tr:hover {
+    background-color: #c3e7fd; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo para las celdas de los datos */
+.tabla-productos td {
+    font-size: 14px;
+}
+
+/* Mensaje cuando no hay productos */
+.tabla-productos td[colspan="5"] {
+    text-align: center;
+    font-style: italic;
+    color: #a94442;
+    font-size: 16px;
+}
+
+/* Estilo para el borde alrededor de las celdas */
+.tabla-productos td, .tabla-productos th {
+    border-right: 2px solid #ddd;
+}
+
+/* Elimina el borde derecho de la última columna */
+.tabla-productos td:last-child, .tabla-productos th:last-child {
+    border-right: none;
+}
+
+/* Bordes redondeados para las celdas de la tabla */
+.tabla-productos th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.tabla-productos th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.tabla-productos td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.tabla-productos td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+/* Estilos para el botón de factura */
+.boton-factura {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-factura:hover {
+    background-color: #0056b3; /* Azul oscuro al hacer hover */
+}
+
+/* Estilo para el botón imprimir */
+.boton-imprimir {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-imprimir:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón Atrás */
+.boton-atras {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #b3d9ff; /* Azul claro para el botón de atrás */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado si es un enlace */
+}
+
+.boton-atras:hover {
+    background-color: #80b3ff; /* Azul medio al hacer hover */
+}
